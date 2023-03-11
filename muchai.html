@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SEO Agency</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+main section {
+  width: 30%;
+  padding: 20px;
+}
+
+footer {
+ 
+
+    </style>
+ </head>
+  <body>
+    <header>
+      <h1>SEO Agency</h1>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a variety of SEO services, including keyword research, on-page optimization, and technical SEO.</p>
+      </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of SEO experts with a passion for helping businesses improve their online presence.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please fill out the form below or send us an email at info@seoagency.com.</p>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message"></textarea><br>
+          <button type="submit">Send</button>
+        </form> 
+      </section>
+    </main>
+    <footer>
+      <p>Copyright 2022 SEO Agency</p>
+    </footer>
+    <script>const form = document.querySelector('form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
+form.addEventListener('submit', e => {
+  e.preventDefault();
+
+  const name = nameInput.value;
+  const email = emailInput.value;
+  const message = messageInput.value;
+
+  if (name === '' || email === '' || message === '') {
+    alert('All fields are required');
+  } else {
+    alert(`Thank you for your message, ${name}! We will get back to you as soon as possible.`);
+  }
+});
+s</script>
+  </body>
+</html>
